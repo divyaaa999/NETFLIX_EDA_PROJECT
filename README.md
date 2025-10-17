@@ -1,94 +1,84 @@
-# NETFLIX_EDA_PROJECT
-📊 Netflix Business Case – Exploratory Data Analysis (EDA)
+# 🎬 Netflix Exploratory Data Analysis: Content Strategy Insights
 
-🎯 Project Overview
+## 📌 Project Overview
 
-This project explores Netflix’s catalog dataset to uncover insights that can guide strategic decisions on content production, regional growth, and release planning. Through Exploratory Data Analysis (EDA), the study examines content types, audience trends, ratings, and global representation to understand what drives engagement on Netflix.
+This project performs an in-depth exploratory data analysis (EDA) on the Netflix dataset, which contains information about all the movies and TV shows available on the platform as of mid-2021. The primary goal is to analyze the content catalog and generate actionable insights to help Netflix make strategic decisions regarding content production, international business growth, and optimal content launch timing.
 
-🧩 Objectives
+## 🤔 Business Problem
 
-Identify which types of shows/movies perform best.
+The analysis aims to answer key business questions for Netflix:
 
-Analyze how Netflix can expand effectively in different countries.
+#### Content Production: 
 
-Determine optimal content release timing for maximum impact.
+What types of movies and TV shows should Netflix focus on producing?
 
-🔍 Key Steps in Analysis
+#### Global Expansion:
 
-Data Understanding & Cleaning
+How can Netflix effectively grow its business in different countries?
 
-Handled missing values, data type conversions, and categorical encoding.
+#### Launch Strategy: 
 
-Examined dataset shape (8,807 records × 12 columns).
+When is the best time to release new content to maximize viewer engagement?
 
-Identified missing values mainly in director, cast, and country.
+## 📊 Dataset
 
-Non-Graphical Analysis
+The dataset used for this analysis is netflix.CSV, a tabular file containing details for over 8,800 unique movies and TV shows. The data includes attributes such as: show_id, type, title, director, cast, country, date_added, release_year, rating, duration, listed_in (genre), and description.
 
-Movies: 6,131 | TV Shows: 2,676
+## 📈 Analysis & Key Findings
 
-Top Countries: USA, India, UK, Japan, South Korea
+The analysis, detailed in the Business_Case_Final.ipynb notebook, involved several stages:
 
-Dominant Ratings: TV-MA, TV-14
+#### 1. Data Cleaning
 
-Leading Genres: Dramas, International Movies, Documentaries
+Handled missing values in critical columns like director, cast, country, and rating to ensure data integrity.
 
-Visual Analysis
+#### 2. Exploratory Data Analysis (EDA)
 
-Distribution of Movies vs. TV Shows
+###### Content Type Distribution: 
+The platform has a higher proportion of Movies (approx. 69%) compared to TV Shows (approx. 31%).
 
-Genre and Rating trends
+###### Geographic Production: 
+The United States is the largest content producer, followed by India. This highlights the importance of these markets for original content.
 
-Country-wise content contributions
+###### Content Growth: 
+The volume of content added to Netflix saw a significant surge between 2018 and 2020.
 
-Duration and release year analysis
+###### Top Genres: 
+Dramas, Comedies, and Documentaries are the most prevalent genres on the platform.
 
-Outlier & Missing Value Detection
+###### Audience Ratings: 
+The majority of the content is rated TV-MA (Mature Audiences) and TV-14 (Parents Strongly Cautioned), indicating a focus on adult and young adult demographics.
 
-Outliers detected in duration (few extremely short or long movies).
+## 💡 Business Recommendations
 
-Visualized missing values using heatmaps for better clarity.
+Based on the analysis, the following strategic recommendations were formulated:
 
-💡 Business Insights
+Focus on International Originals: Invest heavily in producing original content in high-growth markets like India, Japan, and South Korea to cater to local tastes and expand the subscriber base.
 
-📈 Shift from Movies to TV Shows: Significant post-2015 growth in series content.
+Expand TV Show Catalog: Given the rising popularity and engagement of TV Shows (binge-watching culture), increasing the production of diverse and high-quality series is recommended.
 
-🌏 Regional Expansion: Strong potential in India, South Korea, and Japan.
+Diversify Family-Friendly Content: The data reveals a skew towards mature content. Adding more family-friendly movies and children's shows can attract and retain family subscribers.
 
-👥 Mature Audience Focus: TV-MA and TV-14 dominate; limited kids/family content.
+Leverage Top Talent: Continue collaborations with popular directors and actors who have a proven track record of successful projects, as they significantly influence viewership.
 
-🎬 Genre Trends: Dramas and International content perform best.
+Optimize Release Schedule: Plan major content releases around peak viewing times, such as holidays and seasonal breaks, to maximize impact and engagement.
 
-⏱️ Viewer Preference: Most movies range between 90–120 minutes.
+## 🚀 How to Use
 
-🚀 Recommendations
+To explore the analysis yourself:
 
-Invest more in TV shows and regional collaborations.
+Clone this repository (replace with your actual repository URL):
 
-Increase family and kids’ content to broaden audience base.
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 
-Diversify into comedy, action, and thrillers for global appeal.
 
-Optimize content release timing using engagement data.
+Navigate to the project directory:
 
-Maintain global accessibility with multilingual subtitles and dubbing.
+cd your-repo-name
 
-🛠️ Tech Stack
 
-Language: Python
+Open the Business_Case_Final.ipynb file in a Jupyter Notebook or Google Colab environment.
 
-Libraries: pandas, numpy, matplotlib, seaborn
+Ensure the netflix.CSV dataset is in the same directory.
 
-Data Source: Netflix catalog dataset (netflix.csv)
-
-📈 Deliverables
-
-Cleaned and analyzed dataset
-
-Visualizations for univariate & bivariate trends
-
-Summary of business insights and actionable recommendations
-
-🧠 Conclusion
-
-This analysis highlights how Netflix leverages data to shape global entertainment strategies — from focusing on binge-worthy TV shows to localizing content for international audiences.
+Run the cells sequentially to reproduce the analysis.
