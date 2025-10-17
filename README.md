@@ -1,5 +1,6 @@
 # NETFLIX_EDA_PROJECT
 📊 Netflix Business Case – Exploratory Data Analysis (EDA)
+
 🎯 Project Overview
 
 This project explores Netflix’s catalog dataset to uncover insights that can guide strategic decisions on content production, regional growth, and release planning. Through Exploratory Data Analysis (EDA), the study examines content types, audience trends, ratings, and global representation to understand what drives engagement on Netflix.
